@@ -24,7 +24,6 @@ public class ProblemSet2{
         return store;
     }
     public static double compoundInterest(double amount_old, int years){
-        amount_old = 1000;
         double amount_new = amount_old;
         double rate;
 
@@ -52,9 +51,9 @@ public class ProblemSet2{
         System.out.println(factorial(5));
         System.out.println(factorial(6));
 
-        System.out.println(compoundInterest(1));
-        System.out.println(compoundInterest(7));
-        System.out.println(compoundInterest(8));
-        System.out.println(compoundInterest( 9));
+        System.out.println(compoundInterest(1000,1));
+        System.out.println(compoundInterest(1000,7));
+        System.out.println(compoundInterest(1000,8));
+        System.out.println(compoundInterest( 1000,9));
     }
 }
