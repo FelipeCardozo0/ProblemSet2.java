@@ -23,11 +23,12 @@ public class ProblemSet2{
         }
         return store;
     }
-    public static double compoundInterest(int years){
-        double amount_new = 1000;
+    public static double compoundInterest(double amount_old, int years){
+        amount_old = 1000;
+        double amount_new = amount_old;
         double rate;
 
-        for (int y = 1; y <=years; y++){
+        for (int y = 1; y <=years; y++){ 
             if (y <= 8) {
                 rate =0.05;
             } else{
@@ -38,6 +39,7 @@ public class ProblemSet2{
 
         return amount_new;
     }
+
 
     public static void main(String[] args){
         System.out.println(isTriangle(3, 4, 5));
